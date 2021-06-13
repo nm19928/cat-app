@@ -1,0 +1,16 @@
+<h1>Cat Rentals</h1>
+
+<% @rentals.each do |rental| %>
+<h2><%=Cats.find(rental.cat_id).name%></h2>
+<label>Start Date:</label>
+<%=rental.start%>
+<br>
+<br>
+<label>End Date:</label>
+<%=rental.end%>
+<br>
+<br>
+<label>Status:</label>
+<%=rental.status%>
+</form>
+<% end %>
